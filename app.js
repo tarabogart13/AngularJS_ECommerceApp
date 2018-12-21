@@ -4,9 +4,9 @@
   app.controller('StoreController', ['$http', function($http){
     var store = this;
     store.products = [];
-    $http.get('http://localhost/store-products.json').success(function(data){
+    /*$http.get('http://localhost/store-products.json').success(function(data){
       store.products = data;
-    });
+    });*/
   }]);
 
   app.controller('ReviewController', function() {
